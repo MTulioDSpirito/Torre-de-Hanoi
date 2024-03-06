@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\hanoi.css"/>
+    <title>Torre de Hanoi</title>
+</head>
+<h1>Para mover o disco, clique na torre de retirada e em seguida clique na outra torre que deseja colocar </h1>
+<body>
+    <div class="hanoi">
+        
+
+        <div class="disk d1 t1 p5"></div> <!--disco, torre e posição-->
+        <div class="disk d2 t1 p4"></div> 
+        <div class="disk d3 t1 p3"></div> 
+        <div class="disk d4 t1 p2"></div> 
+        <div class="disk d5 t1 p1"></div> 
+        <div class="tower" onclick="clicktower(0)"></div>
+        <div class="tower" onclick="clicktower(1)"></div>
+        <div class="tower" onclick="clicktower(2)"></div>
+    </div>
+    <div id="error-message" style="color: red;"></div>
+    <br/>
+    <button onclick="resetGame()">Resetar Jogo</button>
+    <p>Movimentos: <span id="move-counter">0</span></p>
+    <p>Movimentos Máximos: <span id="max-moves">65</span></p>
+
+    <button onclick="simulateGame()">Simular Jogo</button>
+
+
+</body>
+ <script src="javascript/hanoi.js"></script>  
+</html>
